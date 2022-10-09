@@ -1,0 +1,96 @@
+*
+{
+    margin : 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url(DairyFarm1New.png);
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+
+}
+
+.logo{
+   width: 240px;
+   padding: 20px 0;
+   cursor: pointer; 
+}
+
+.content{
+    top:50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: rgb(9, 0, 0);
+}
+
+.content h1 {
+    font-size:64px;
+    font-weight:600;
+
+}
+
+.content h1 span{
+    color: #ff3753;
+}
+
+.content button{
+    background : transparent;
+    border : 5px solid rgb(6, 0, 0);
+    outline : none;
+    padding : 12px 30px;
+    color :  rgb(14, 13, 13);
+    display: flex;
+    align-items: center;
+    margin-top : 20px;
+    cursor :pointer; 
+}
+
+.content button img{
+    width : 20px;
+    margin-left: 20px;
+}
+
+
+.launch-time {
+    display : flex;
+}
+
+.launch-time div{
+    flex-basis : 150px;
+}
+
+.launch-time div p{
+    font-size : 60px;
+    margin-bottom : -14px;
+}
+
+.rocket{
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 0%;
+    animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+
+    100%{
+        bottom:105%;
+        opacity: 1;
+        
+    }
+
+}
